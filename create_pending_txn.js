@@ -29,15 +29,20 @@ const run = async () => {
       value: Drip.fromCFX(3),
       nonce: 55, // need to change
     })
-    .then(async (hash) => {
-      console.log("hash of mistake nonce: ", hash);
+    .then(
+      async (hash) => {
+        console.log("hash of mistake nonce: ", hash);
 
-      // you might need wait seconds here...
-      await sleep();
+        // you might need wait seconds here...
+        await sleep();
 
-      const transaction = await conflux.getTransactionByHash(hash);
-      console.log(transaction); // get transaction from remote
-    });
+        const transaction = await conflux.getTransactionByHash(hash);
+        console.log(transaction); // get transaction from remote
+      },
+      (e) => {
+        console.log("hash of mistake nonce send error: ", e);
+      }
+    );
 
   conflux
     .sendTransaction({
@@ -45,15 +50,20 @@ const run = async () => {
       to: ADDRESS_TO,
       value: Drip.fromCFX(2000),
     })
-    .then(async (hash) => {
-      console.log("hash of lacking balance: ", hash);
+    .then(
+      async (hash) => {
+        console.log("hash of lacking balance: ", hash);
 
-      // you might need wait seconds here...
-      await new Promise((resolve) => setTimeout(resolve, 15 * 1000));
+        // you might need wait seconds here...
+        await new Promise((resolve) => setTimeout(resolve, 15 * 1000));
 
-      const transaction = await conflux.getTransactionByHash(hash);
-      console.log(transaction); // get transaction from remote
-    });
+        const transaction = await conflux.getTransactionByHash(hash);
+        console.log(transaction); // get transaction from remote
+      },
+      (e) => {
+        console.log("hash of lacking balance send error: ", e);
+      }
+    );
 };
 
 const getPendingTxns = async (address) => {
