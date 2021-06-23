@@ -1,13 +1,11 @@
 // import Conflux Class
 const { Conflux, Drip } = require("js-conflux-sdk");
+const { sleep } = require('./utils')
 
 const PRIVATE_KEY = ""; // sender private key
 const ADDRESS_FROM = "";
 const ADDRESS_TO = "";
 const RPC = "https://testnet-scantest.confluxnetwork.org/rpcv2";
-
-const sleep = (time) =>
-  new Promise((resolve) => setTimeout(resolve, time || 15 * 1000));
 
 // initialize a Conflux object
 const conflux = new Conflux({
@@ -16,7 +14,7 @@ const conflux = new Conflux({
   networkId: 1,
 });
 
-const sender = conflux.wallet.addPrivateKey(PRIVATE_KEY);
+conflux.wallet.addPrivateKey(PRIVATE_KEY);
 
 const run = async () => {
   const status = await conflux.getStatus();

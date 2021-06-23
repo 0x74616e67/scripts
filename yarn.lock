@@ -3,9 +3,9 @@
 
 
 "@babel/runtime@^7.8.4":
-  version "7.14.0"
-  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.14.0.tgz#46794bc20b612c5f75e62dd071e24dfd95f1cbe6"
-  integrity sha512-JELkvo/DlpNdJ7dlyw/eY7E0suy5i5GQH+Vlxaq1nsNJ+H7f4Vtv3jMeCEgRhZZQFXTjldYfQgv2qmM6M1v5wA==
+  version "7.14.6"
+  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.14.6.tgz#535203bc0892efc7dec60bdc27b2ecf6e409062d"
+  integrity sha512-/PCB2uJ7oM44tz8YhC4Z/6PeOKXp4K588f+5M3clr1M4zbqztlo0XEfJ2LEzj/FgwfgGcIdl8n7YYjTCI0BYwg==
   dependencies:
     regenerator-runtime "^0.13.4"
 
@@ -311,10 +311,10 @@ is-typedarray@^1.0.0:
   resolved "https://registry.yarnpkg.com/is-typedarray/-/is-typedarray-1.0.0.tgz#e479c80858df0c1b11ddda6940f96011fcda4a9a"
   integrity sha1-5HnICFjfDBsR3dppQPlgEfzaSpo=
 
-js-conflux-sdk@^1.6.3:
-  version "1.6.3"
-  resolved "https://registry.yarnpkg.com/js-conflux-sdk/-/js-conflux-sdk-1.6.3.tgz#adfb2bc6cb74ae8821c7108836e181225b9f6e2b"
-  integrity sha512-jfPwLb4W/sUmLiyvtvhPFHoCYkRLjMH9N14s/viibqURdKw+ziYKxNv70kKKrd1wn4X1gIacA/cL8ABc9H3JJg==
+js-conflux-sdk@1.6.8:
+  version "1.6.8"
+  resolved "https://registry.yarnpkg.com/js-conflux-sdk/-/js-conflux-sdk-1.6.8.tgz#79567e59a9a79a3f30b3c23fc51ef90554e0647e"
+  integrity sha512-Sxs5t8lXDycB9VkuwG6sJyfwzWvBiCRCl9oJHHTtk7inkgt6AUiwlXmCbbuKOggyQv1Tbio93sGE93A8NjLWMA==
   dependencies:
     "@babel/runtime" "^7.8.4"
     "@conflux-dev/conflux-address-js" "^1.0.0"
@@ -327,9 +327,9 @@ js-conflux-sdk@^1.6.3:
     websocket "^1.0.31"
 
 jsbi@^3.1.4:
-  version "3.1.4"
-  resolved "https://registry.yarnpkg.com/jsbi/-/jsbi-3.1.4.tgz#9654dd02207a66a4911b4e4bb74265bc2cbc9dd0"
-  integrity sha512-52QRRFSsi9impURE8ZUbzAMCLjPm4THO7H2fcuIvaaeFTbSysvkodbQQXIVsNgq/ypDbq6dJiuGKL0vZ/i9hUg==
+  version "3.1.5"
+  resolved "https://registry.yarnpkg.com/jsbi/-/jsbi-3.1.5.tgz#70c2aaa2f75e1dc7604fed45298061ca23724046"
+  integrity sha512-w2BY0VOYC1ahe+w6Qhl4SFoPvPsZ9NPHY4bwass+LCgU7RK3PBoVQlQ3G1s7vI8W3CYyJiEXcbKF7FIM/L8q3Q==
 
 keccak@^2.0.0:
   version "2.1.0"
